@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+
+  <title>Socket Test</title>
+</head>
+
+<body>
+  <h1>Socket Test</h1>
+
+  <div id="match">
+    <input type="text" placeholder="userId"> 
+
+    <button id="startMatching">매칭시작</button>
+    <button id="cancelMatching">매칭취소</button>
+
+    <div id="matched">
+      <h3 id="matchedUserData"></h3>
+      <button id="acceptButton">수락</button>
+      <button id="declineButton">거절</button>
+    </div>
+
+  </div>
+  <div id="call">
+      <video id="myFace" autoplay playsinline muted></video>
+      <button id="mute">Mute</button>
+      <button id="camera">Turn Camera Off</button>
+      <select id="cameras"></select>
+
+      <video id="peerFace" autoplay playsinline></video>
+  </div>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
