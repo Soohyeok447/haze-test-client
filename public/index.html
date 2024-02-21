@@ -29,12 +29,21 @@
       <video id="myFace" autoplay playsinline muted></video>
       <button id="mute">Mute</button>
       <button id="camera">Turn Camera Off</button>
+      <button id="leave">Leave</button>
+      <button id="timeOut">timeOut</button>
+      <button id="faceRecognition">얼굴 공개 요청</button>
+      <button id="report">신고</button>
+      <div id="face">
+        <button id="faceAcceptButton">수락</button>
+        <button id="faceDeclineButton">거절</button>
+      </div>
       <select id="cameras"></select>
 
       <video id="peerFace" autoplay playsinline></video>
   </div>
 
-  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+  <script src="https://dev.haze.monster:3001/socket.io/socket.io.js"></script>
   <script src="./app.js"></script>
 </body>
 
